@@ -6,4 +6,5 @@ This project is a starter that contains some configurations
 - typescript
 - css
 - images loader formats
-- font loader formats
+- file loader formats
+- PWA configuration, with it's manifest.json
