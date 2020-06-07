@@ -1,0 +1,10 @@
+{
+    "name": "Sorteios variados",
+    "short_name": "Sorteios variados",
+    "theme_color": "#219653",
+    "background_color": "#219653",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }

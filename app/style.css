@@ -12,10 +12,3 @@ body {
     position: relative;
     background-color: #fff;
 }
-
-
-.MuiFormControl-root .MuiInputBase-root input {
-    background-color: #fff;
-    overflow: hidden;
-    border-radius: 5px;
-}

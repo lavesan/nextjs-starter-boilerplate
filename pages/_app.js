@@ -4,24 +4,15 @@ import { ThemeProvider } from 'styled-components'
 import { Provider } from 'react-redux';
 import withRedux from "next-redux-wrapper";
 import { ToastProvider } from "react-toast-notifications";
-import 'swiper/css/swiper.css';
+// import 'swiper/css/swiper.css';
+import axios from 'axios';
 
 import { makeStore } from "../store";
-import { AddressModal } from '../components/modal/address-modal';
-import { ProductModalComponent } from '../components/modal/product-modal';
-import { TermOfContractModal } from '../components/modal/term-of-contract-modal';
-import { FinishedOrderModal } from '../components/modal/finished-order-modal';
-import { OrderModalComponent } from '../components/modal/order-modal';
-import { AddOrderCommentModal } from '../components/modal/add-order-comment';
-import { ForgotPasswordModal } from '../components/modal/forgot-password-modal';
-import { FinishedForgotPasswordModal } from '../components/modal/finished-forgot-password';
-import { ResponsiveNavComponent } from '../components/responsive-nav';
-import { ResponsiveCartComponent } from '../components/responsive-cart';
 import { AppComponent } from '../app/App';
-import environment from '../public/static/env.json';
+// import environment from '../public/static/env.json';
 import theme from '../app/app.theme';
 
-axios.defaults.baseURL = environment.API_URL;
+// axios.defaults.baseURL = environment.API_URL;
 axios.interceptors.request.use(req => {
     
   const token = localStorage.getItem('auth');
@@ -67,16 +58,6 @@ class MyApp extends App {
             <AppComponent
               Component={Component}
               pageProps={pageProps} />
-            <AddressModal />
-            <ProductModalComponent />
-            <ResponsiveNavComponent />
-            <ResponsiveCartComponent />
-            <TermOfContractModal />
-            <AddOrderCommentModal />
-            <OrderModalComponent />
-            <FinishedOrderModal />
-            <ForgotPasswordModal />
-            <FinishedForgotPasswordModal />
           </ToastProvider>
         </ThemeProvider>
       </Provider>
