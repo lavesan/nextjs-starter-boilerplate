@@ -2,6 +2,7 @@
 
 This project is a starter that contains some configurations
 
+- redux
 - styled-components
 - typescript
 - css
