@@ -29,12 +29,12 @@ const App = ({ Component, pageProps, dispatch }) => {
       }}>
           <GlobalStyle />
           <Head>
-            {/* <link rel="icon" href={zeroVenenoLogo} /> */}
+            <link rel="icon" href="~/logo" />
             <meta
               name="description"
-              content="Sorteis variados"
+              content="Descrição do site"
             />
-            <meta name="keywords" content="delivery,orgânico,recife,hortaliças,natural,saudável,vegetariano,vegano,frutas" />
+            <meta name="keywords" content="some,keywords" />
             <meta name="author" content="Valdery Alves Paes Júnior <valdery.jur@gmail.com> (http://valderyalves.com)" />
             <meta charset='utf-8' />
             <meta http-equiv='X-UA-Compatible' content='IE=edge' />

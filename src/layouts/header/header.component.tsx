@@ -10,7 +10,7 @@ export default () => {
 
     return (
         <HeaderLayout>
-
+            Cabeçalho
         </HeaderLayout>
     )
 

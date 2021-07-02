@@ -3,7 +3,7 @@ const withFonts         = require('next-fonts');
 const withPlugins       = require("next-compose-plugins");
 const withCSS           = require('@zeit/next-css');
 // const withTypescript    = require('@zeit/next-typescript');
-const withPWA           = require('next-pwa');
+// const withPWA           = require('next-pwa');
 
 module.exports = withPlugins(
   [
@@ -11,11 +11,11 @@ module.exports = withPlugins(
     withFonts,
     withImages,
     // withTypescript,
-    [withPWA, {
-      pwa: {
-        dest: 'public',
-      }
-    }]
+    // [withPWA, {
+    //   pwa: {
+    //     dest: 'public',
+    //   }
+    // }]
   ],
   {
     distDir: "./.next",

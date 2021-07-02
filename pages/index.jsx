@@ -1,3 +1,3 @@
-import { InicioView } from '../views/inicio';
+import InicioView from '../src/views/inicio';
 
 export default InicioView;
